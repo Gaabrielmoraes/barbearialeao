@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leão Cortes · Barbearia em Barbacena/MG</title>
+<meta name="description" content="Leão Cortes — barbearia no Caminho Novo, Barbacena/MG. Corte, barba, pigmentação e sobrancelhas. Nota 5.0. Agende online ou pelo WhatsApp.">
+<meta property="og:title" content="Leão Cortes · Barbearia em Barbacena/MG">
+<meta property="og:description" content="Corte, barba e pigmentação com nota 5.0. Agende online em segundos.">
+<meta property="og:image" content="https://img-appbarber-appbeleza.s3.sa-east-1.amazonaws.com/leaocortes/leaocortes_1790545338406_pcxou1.jpg">
+<meta name="theme-color" content="#0d0c0a">
+<link rel="icon" href="https://img-appbarber-appbeleza.s3.sa-east-1.amazonaws.com/leaocortes/leaocortes_1790545338406_pcxou1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarberShop",
+  "name": "Leão Cortes",
+  "image": "https://img-appbarber-appbeleza.s3.sa-east-1.amazonaws.com/leaocortes/leaocortes_1790545338406_pcxou1.jpg",
+  "telephone": "+55 32 99127-1265",
+  "priceRange": "R$ 10 – R$ 80",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Caminho Novo, 229A",
+    "addressLocality": "Barbacena",
+    "addressRegion": "MG",
+    "postalCode": "36204-154",
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -21.2118789, "longitude": -43.7604426 },
+  "hasMap": "https://maps.app.goo.gl/ayHe3gLHKjBQjpwSA",
+  "url": "https://sites.appbarber.com.br/leaocortes",
+  "sameAs": ["https://maps.app.goo.gl/ayHe3gLHKjBQjpwSA", "https://sites.appbarber.com.br/leaocortes"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "13:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "bestRating": "5" },
+  "paymentAccepted": "Dinheiro, Cartão de Crédito, Cartão de Débito, PIX"
+}
+</script>
+
+<style>
+:root{
+  --bg:#0d0c0a;
+  --bg-2:#15130f;
+  --card:#1b1813;
+  --line:#2c271f;
+  --text:#f3efe7;
+  --muted:#a59d8f;
+  --gold:#d4a24c;
+  --gold-2:#f0c674;
+  --wa:#25d366;
+  --radius:14px;
+  --max:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.1}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.section{padding:88px 0}
+.section-head{max-width:620px;margin-bottom:44px}
+.section-head h2{font-size:clamp(2rem,5vw,2.9rem);margin:10px 0 12px}
+.section-head p{color:var(--muted)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;font-family:Oswald,Impact,sans-serif;font-weight:600;font-size:1rem;text-transform:uppercase;letter-spacing:.08em;line-height:1;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#1a1408;box-shadow:0 10px 30px -10px rgba(212,162,76,.6)}
+.btn-ghost{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:var(--gold)}
+.btn svg{width:20px;height:20px;flex-shrink:0}
+
+/* Nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(13,12,10,.88);backdrop-filter:blur(12px);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;font-family:Oswald,sans-serif;font-size:1.25rem;text-transform:uppercase;letter-spacing:.06em}
+.brand img{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold);object-fit:cover}
+.nav-links{display:flex;gap:30px;font-size:.92rem;color:var(--muted)}
+.nav-links a:hover{color:var(--text)}
+.nav .btn{padding:12px 22px;font-size:.92rem}
+.lbl-short{display:none}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:110px 0 70px;
+  background:
+    radial-gradient(ellipse 70% 60% at 80% 30%,rgba(212,162,76,.18),transparent 60%),
+    radial-gradient(ellipse 50% 50% at 10% 90%,rgba(212,162,76,.08),transparent 60%),
+    var(--bg)}
+.hero::after{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.015) 0 2px,transparent 2px 14px);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.rating{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03);font-size:.88rem;color:var(--muted);margin-bottom:26px}
+.rating .stars{color:var(--gold-2);letter-spacing:2px}
+.rating b{color:var(--text)}
+.hero h1{font-size:clamp(2.7rem,7.5vw,5.4rem)}
+.hero h1 span{color:var(--gold)}
+.hero p.lead{font-size:1.12rem;color:var(--muted);max-width:520px;margin:22px 0 34px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:22px;margin-top:36px;font-size:.9rem;color:var(--muted)}
+.hero-meta div{display:flex;align-items:center;gap:8px}
+.hero-meta svg{width:18px;height:18px;color:var(--gold)}
+.hero-logo{position:relative;justify-self:center;width:min(100%,400px);aspect-ratio:1}
+.hero-logo .ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(212,162,76,.35)}
+.hero-logo .ring.r2{inset:-22px;border-color:rgba(212,162,76,.12)}
+.hero-logo img{position:absolute;inset:18px;width:calc(100% - 36px);height:calc(100% - 36px);border-radius:50%;object-fit:cover;box-shadow:0 30px 80px -20px rgba(0,0,0,.9),0 0 0 6px var(--bg-2)}
+.open-badge{position:absolute;bottom:6%;left:-4%;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:.85rem;box-shadow:0 20px 40px -15px rgba(0,0,0,.8)}
+.open-badge .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;background:#777}
+.open-badge.is-open .dot{background:var(--wa);box-shadow:0 0 0 4px rgba(37,211,102,.18)}
+.open-badge small{display:block;color:var(--muted);font-size:.78rem;margin-top:2px}
+
+/* Trust strip */
+.trust{border-block:1px solid var(--line);background:var(--bg-2)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{padding:28px 18px;text-align:center;border-right:1px solid var(--line)}
+.trust-item:last-child{border-right:0}
+.trust-item strong{display:block;font-family:Oswald,sans-serif;font-size:1.7rem;color:var(--gold-2);font-weight:600}
+.trust-item span{font-size:.85rem;color:var(--muted)}
+
+/* Services */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.tab{padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);font:500 .9rem Inter,sans-serif;cursor:pointer;transition:.2s}
+.tab:hover{color:var(--text)}
+.tab.active{background:var(--gold);border-color:var(--gold);color:#1a1408}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.svc{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 22px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);transition:border-color .2s,transform .2s}
+.svc:hover{border-color:rgba(212,162,76,.5);transform:translateY(-2px)}
+.svc h3{font-family:Inter,sans-serif;text-transform:none;letter-spacing:0;font-size:1.02rem;font-weight:600}
+.svc .dur{font-size:.82rem;color:var(--muted);display:flex;align-items:center;gap:6px;margin-top:4px}
+.svc .dur svg{width:14px;height:14px}
+.svc .tag{display:inline-block;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(212,162,76,.4);border-radius:6px;padding:1px 7px;margin-left:8px;vertical-align:2px}
+.svc .price{text-align:right;flex-shrink:0}
+.svc .price small{display:block;font-size:.72rem;color:var(--muted)}
+.svc .price b{font-family:Oswald,sans-serif;font-size:1.45rem;font-weight:600;color:var(--gold-2)}
+.svc.hide{display:none}
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.note{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border:1px dashed var(--line);border-radius:var(--radius);font-size:.92rem;color:var(--muted)}
+.note svg{width:22px;height:22px;color:var(--gold);flex-shrink:0;margin-top:2px}
+.note b{color:var(--text)}
+.note a{color:var(--gold-2);font-weight:600}
+.svc-cta{margin-top:34px;text-align:center}
+
+/* Why */
+.why{background:var(--bg-2)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.why-card{padding:30px 26px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius)}
+.why-card .ico{width:50px;height:50px;border-radius:12px;display:grid;place-items:center;background:rgba(212,162,76,.12);color:var(--gold);margin-bottom:20px}
+.why-card .ico svg{width:24px;height:24px}
+.why-card h3{font-size:1.25rem;margin-bottom:10px}
+.why-card p{color:var(--muted);font-size:.95rem}
+
+/* Reviews */
+.reviews{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:44px;border:1px solid var(--line);border-radius:20px;background:
+  radial-gradient(ellipse 60% 90% at 100% 50%,rgba(212,162,76,.12),transparent 70%),var(--card)}
+.reviews h2{font-size:clamp(1.8rem,4.5vw,2.6rem);margin:10px 0 12px}
+.reviews p{color:var(--muted);margin-bottom:26px}
+.score-cards{display:grid;gap:14px}
+.score{display:flex;align-items:center;gap:18px;padding:20px 22px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);transition:border-color .2s,transform .2s}
+.score:hover{border-color:var(--gold);transform:translateY(-2px)}
+.score .g{width:42px;height:42px;flex-shrink:0}
+.score b{font-family:Oswald,sans-serif;font-size:2rem;font-weight:600;margin-right:10px;vertical-align:middle}
+.score .stars{color:var(--gold-2);letter-spacing:2px;vertical-align:middle}
+.score small{display:block;color:var(--muted);font-size:.85rem}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px}
+.gallery figure{border-radius:var(--radius);overflow:hidden;background:var(--card);border:1px solid var(--line);position:relative}
+.gallery figure:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gallery figure:hover img{transform:scale(1.05)}
+.ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:20px;color:#5c5446;font-size:.85rem;background:repeating-linear-gradient(45deg,#17140f 0 10px,#1b1813 10px 20px)}
+.ph svg{width:34px;height:34px;margin:0 auto 8px;display:block}
+
+/* Location */
+.loc-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:22px}
+.info-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
+.info-block+.info-block{margin-top:26px;padding-top:26px;border-top:1px solid var(--line)}
+.info-block h3{font-size:1rem;letter-spacing:.12em;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.info-block h3 svg{width:18px;height:18px}
+.hours{list-style:none}
+.hours li{display:flex;justify-content:space-between;padding:7px 0;font-size:.95rem;color:var(--muted);border-bottom:1px dotted var(--line)}
+.hours li:last-child{border:0}
+.hours li.today{color:var(--text);font-weight:600}
+.hours li.today span:first-child::after{content:"Hoje";margin-left:8px;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;background:var(--gold);color:#1a1408;padding:2px 7px;border-radius:5px;vertical-align:2px}
+.hours li.closed span:last-child{color:#7a6f60}
+.pay{display:flex;flex-wrap:wrap;gap:8px}
+.pay span{padding:7px 13px;border:1px solid var(--line);border-radius:8px;font-size:.85rem}
+.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:420px;background:var(--card)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.6) invert(.92) hue-rotate(180deg) contrast(.9)}
+.addr{font-size:1rem;margin-bottom:14px}
+.addr small{display:block;color:var(--muted)}
+
+/* Final CTA */
+.final{text-align:center;padding:96px 0;background:
+  radial-gradient(ellipse 60% 80% at 50% 0%,rgba(212,162,76,.2),transparent 70%),var(--bg-2);border-top:1px solid var(--line)}
+.final h2{font-size:clamp(2.2rem,6vw,3.6rem);margin:12px 0 16px}
+.final p{color:var(--muted);max-width:520px;margin:0 auto 32px}
+.final .hero-ctas{justify-content:center}
+
+/* Footer */
+footer{padding:36px 0;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+
+/* Floating WhatsApp */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);transition:transform .2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--wa);animation:pulse 2.2s infinite;z-index:-1}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.6);opacity:0}}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.wa-float::before{animation:none}html{scroll-behavior:auto}}
+
+/* Responsive */
+@media (max-width:900px){
+  .nav-links{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:50px;text-align:center}
+  .hero p.lead{margin-inline:auto}
+  .hero-ctas,.hero-meta{justify-content:center}
+  .hero-logo{width:min(78%,320px);order:-1}
+  .open-badge{left:50%;transform:translateX(-50%);bottom:-18px;white-space:nowrap}
+  .trust .wrap{grid-template-columns:repeat(2,1fr)}
+  .trust-item:nth-child(2){border-right:0}
+  .trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .services,.notes,.why-grid,.loc-grid,.reviews{grid-template-columns:1fr}
+  .reviews{padding:28px 22px;gap:28px}
+  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
+  .section{padding:70px 0}
+}
+@media (max-width:480px){
+  .wrap{padding:0 16px}
+  .nav .btn{padding:10px 14px}
+  .nav .btn .lbl-long{display:none}
+  .nav .btn .lbl-short{display:inline}
+  .hero-ctas .btn{width:100%}
+  .svc{padding:16px 18px}
+  .svc .price b{font-size:1.25rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ CONFIG RÁPIDA ============
+  Agendamento: https://sites.appbarber.com.br/leaocortes
+  WhatsApp:    5532991271265
+  Para trocar fotos da galeria, substitua os blocos <div class="ph"> por <img src="...">
+========================================== -->
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#topo" class="brand">
+      <img src="https://img-appbarber-appbeleza.s3.sa-east-1.amazonaws.com/leaocortes/leaocortes_1790545338406_pcxou1.jpg" alt="Logo Leão Cortes">
+      Leão Cortes
+    </a>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#local">Localização</a>
+    </nav>
+    <a class="btn btn-gold" href="https://sites.appbarber.com.br/leaocortes" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      <span class="lbl-long">Agendar horário</span><span class="lbl-short">Agendar</span>
+    </a>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="rating"><span class="stars">★★★★★</span> <b>5.0</b> de avaliação dos clientes</div>
+        <h1>Respeito<br>no <span>corte.</span><br>Força no estilo.</h1>
+        <p class="lead">Barbearia no Caminho Novo, em Barbacena. Corte, barba, pigmentação e sobrancelha feitos com cuidado, hora marcada e sem espera.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-gold" href="https://sites.appbarber.com.br/leaocortes" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Agendar online
+          </a>
+          <a class="btn btn-ghost" href="https://wa.me/5532991271265?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2 0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.9 1.9 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zM20.3 3.7C18.1 1.5 15.1.2 12 .2 5.5.2.2 5.5.2 12c0 2.1.5 4.1 1.6 5.9L.1 23.8l6-1.6c1.7.9 3.7 1.4 5.6 1.4 6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.4-8.3z"/></svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+        <div class="hero-meta">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-6.5-8-13a8 8 0 0 1 16 0c0 6.5-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg> Caminho Novo, Barbacena/MG</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg> PIX, débito e crédito</div>
+        </div>
+      </div>
+
+      <div class="hero-logo reveal">
+        <div class="ring r2"></div>
+        <div class="ring"></div>
+        <img src="https://img-appbarber-appbeleza.s3.sa-east-1.amazonaws.com/leaocortes/leaocortes_1790545338406_pcxou1.jpg" alt="Leão Cortes Barbearia">
+        <div class="open-badge" id="openBadge"><span class="dot"></span><span id="openTxt">Carregando…</span><small id="openSub"></small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust">
+    <div class="wrap">
+      <div class="trust-item"><strong>5.0 ★</strong><span>No Google e no AppBarber</span></div>
+      <div class="trust-item"><strong>17+</strong><span>Serviços disponíveis</span></div>
+      <div class="trust-item"><strong>6 dias</strong><span>Por semana</span></div>
+      <div class="trust-item"><strong>24h</strong><span>Agendamento online</span></div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Tabela de serviços</span>
+        <h2>Serviços e valores</h2>
+        <p>Preço claro antes de sentar na cadeira. Escolha o serviço e agende o horário que funciona pra você.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist">
+        <button class="tab active" data-f="all">Todos</button>
+        <button class="tab" data-f="combo">Combos</button>
+        <button class="tab" data-f="cabelo">Cabelo</button>
+        <button class="tab" data-f="barba">Barba</button>
+        <button class="tab" data-f="extra">Extras</button>
+      </div>
+
+      <div class="services" id="services">
+        <div class="svc" data-c="combo"><div><h3>Corte, barba e sobrancelhas<span class="tag">Completo</span></h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>75 min</div></div><div class="price"><small>a partir de</small><b>R$ 70</b></div></div>
+        <div class="svc" data-c="combo"><div><h3>Corte e barba<span class="tag">Mais pedido</span></h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>75 min</div></div><div class="price"><small>a partir de</small><b>R$ 60</b></div></div>
+        <div class="svc" data-c="combo"><div><h3>Corte + pigmentação</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>60 min</div></div><div class="price"><small>a partir de</small><b>R$ 55</b></div></div>
+        <div class="svc" data-c="combo"><div><h3>Corte + sobrancelhas</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>60 min</div></div><div class="price"><b>R$ 50</b></div></div>
+        <div class="svc" data-c="combo"><div><h3>Navalhado + sobrancelhas</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>60 min</div></div><div class="price"><small>a partir de</small><b>R$ 50</b></div></div>
+        <div class="svc" data-c="cabelo"><div><h3>Corte</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45 min</div></div><div class="price"><b>R$ 40</b></div></div>
+        <div class="svc" data-c="cabelo"><div><h3>Side cut (corte lateral feminino)</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>30 min</div></div><div class="price"><small>a partir de</small><b>R$ 40</b></div></div>
+        <div class="svc" data-c="cabelo"><div><h3>Raspar a cabeça (1 pente)</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>30 min</div></div><div class="price"><small>a partir de</small><b>R$ 30</b></div></div>
+        <div class="svc" data-c="cabelo"><div><h3>Somente o pezinho</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>15 min</div></div><div class="price"><small>a partir de</small><b>R$ 15</b></div></div>
+        <div class="svc" data-c="barba"><div><h3>Barboterapia</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>30 min</div></div><div class="price"><b>R$ 40</b></div></div>
+        <div class="svc" data-c="barba"><div><h3>Barba</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>30 min</div></div><div class="price"><small>a partir de</small><b>R$ 30</b></div></div>
+        <div class="svc" data-c="barba"><div><h3>Bigode</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>15 min</div></div><div class="price"><small>a partir de</small><b>R$ 10</b></div></div>
+        <div class="svc" data-c="extra"><div><h3>Pigmentação</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>15 min</div></div><div class="price"><small>a partir de</small><b>R$ 15</b></div></div>
+        <div class="svc" data-c="extra"><div><h3>Sobrancelhas (gilete)</h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>15 min</div></div><div class="price"><small>a partir de</small><b>R$ 10</b></div></div>
+        <div class="svc" data-c="extra"><div><h3>Lavar cabelo (premium)<span class="tag">Com corte</span></h3><div class="dur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>15 min</div></div><div class="price"><small>a partir de</small><b>R$ 5</b></div></div>
+      </div>
+
+      <div class="notes reveal">
+        <div class="note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9 21v-6h6v6"/></svg>
+          <div><b>Corte a domicílio</b> a partir de R$ 80. Não agende pelo app — <a href="https://wa.me/5532991271265?text=Ol%C3%A1!%20Gostaria%20de%20um%20corte%20a%20domic%C3%ADlio." target="_blank" rel="noopener">chame no WhatsApp</a>.</div>
+        </div>
+        <div class="note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <div><b>Domingos e feriados</b> com valor em dobro, mediante combinação. <a href="https://wa.me/5532991271265?text=Ol%C3%A1!%20Gostaria%20de%20um%20hor%C3%A1rio%20no%20domingo%2Fferiado." target="_blank" rel="noopener">Fale pelo WhatsApp</a>.</div>
+        </div>
+      </div>
+
+      <div class="svc-cta reveal">
+        <a class="btn btn-gold" href="https://sites.appbarber.com.br/leaocortes" target="_blank" rel="noopener">Ver horários disponíveis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="section why" id="diferenciais">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Por que a Leão Cortes</span>
+        <h2>Uma nova experiência para uma antiga tradição</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Hora marcada, sem fila</h3>
+          <p>Agende pelo celular a qualquer hora e chegue só na sua vez. Seu tempo é respeitado.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 3 6.5 7 .9-5.1 4.8 1.3 7L12 17.8 5.8 21.2l1.3-7L2 9.4l7-.9z"/></svg></div>
+          <h3>Nota máxima</h3>
+          <p>Avaliação 5.0 de quem já sentou na cadeira. Qualidade que se repete a cada visita.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V8H4v4"/><path d="M2 12h20v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><path d="M8 18v3M16 18v3"/></svg></div>
+          <h3>Ambiente preparado</h3>
+          <p>Estrutura completa com lavatório, produtos profissionais e atendimento caprichado.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3>Preço transparente</h3>
+          <p>Todos os valores publicados. Sem surpresa na hora de pagar.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+          <h3>Pague como preferir</h3>
+          <p>PIX, cartão de débito, crédito ou dinheiro.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5V21H3z"/></svg></div>
+          <h3>Atende em casa</h3>
+          <p>Não pode vir? Corte a domicílio com agendamento direto pelo WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVALIAÇÕES -->
+  <section class="section" id="avaliacoes">
+    <div class="wrap">
+      <div class="reviews reveal">
+        <div class="reviews-text">
+          <span class="eyebrow">Avaliações reais</span>
+          <h2>Nota máxima onde o cliente avalia</h2>
+          <p>As notas abaixo vêm direto do Google e do aplicativo de agendamento. Nada de depoimento inventado: clique e confira você mesmo.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-gold" href="https://maps.app.goo.gl/ayHe3gLHKjBQjpwSA" target="_blank" rel="noopener">Ver no Google</a>
+            <a class="btn btn-ghost" href="https://maps.app.goo.gl/ayHe3gLHKjBQjpwSA" target="_blank" rel="noopener">Deixar minha avaliação</a>
+          </div>
+        </div>
+        <div class="score-cards">
+          <a class="score" href="https://maps.app.goo.gl/ayHe3gLHKjBQjpwSA" target="_blank" rel="noopener">
+            <svg class="g" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>
+            <div><b>5,0</b><span class="stars">★★★★★</span><small>Google Maps</small></div>
+          </a>
+          <a class="score" href="https://sites.appbarber.com.br/leaocortes" target="_blank" rel="noopener">
+            <svg class="g" viewBox="0 0 24 24" fill="none" stroke="#d4a24c" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 15l3 3 5-6"/></svg>
+            <div><b>5,0</b><span class="stars">★★★★★</span><small>AppBarber</small></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="section" id="galeria">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Galeria</span>
+        <h2>Trabalhos e espaço</h2>
+        <p>Confira alguns cortes e o ambiente da barbearia.</p>
+      </div>
+      <div class="gallery reveal">
+        <!-- Troque cada <div class="ph">…</div> por <img src="SUA-FOTO.jpg" alt="Descrição"> -->
+        <figure><div class="ph"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>Foto do espaço</div></div></figure>
+        <figure><div class="ph"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>Corte</div></div></figure>
+        <figure><div class="ph"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>Barba</div></div></figure>
+        <figure><div class="ph"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>Degradê</div></div></figure>
+        <figure><div class="ph"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>Pigmentação</div></div></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section class="section why" id="local">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Onde estamos</span>
+        <h2>Horários e localização</h2>
+      </div>
+      <div class="loc-grid">
+        <div class="info-card reveal">
+          <div class="info-block">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-6.5-8-13a8 8 0 0 1 16 0c0 6.5-8 13-8 13z"/><circle cx="12" cy="9" r="3"/></svg>Endereço</h3>
+            <p class="addr">Rua Caminho Novo, 229A<small>Caminho Novo · Barbacena/MG · CEP 36204-154</small></p>
+            <a class="btn btn-ghost" href="https://maps.app.goo.gl/ayHe3gLHKjBQjpwSA" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 11 19-9-9 19-2-8z"/></svg>
+              Como chegar
+            </a>
+          </div>
+          <div class="info-block">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Horário</h3>
+            <ul class="hours" id="hours">
+              <li data-d="1"><span>Segunda</span><span>13:00 – 19:00</span></li>
+              <li data-d="2"><span>Terça</span><span>09:00 – 19:00</span></li>
+              <li data-d="3"><span>Quarta</span><span>09:00 – 19:00</span></li>
+              <li data-d="4"><span>Quinta</span><span>09:00 – 19:00</span></li>
+              <li data-d="5"><span>Sexta</span><span>09:00 – 19:00</span></li>
+              <li data-d="6"><span>Sábado</span><span>09:00 – 16:00</span></li>
+              <li data-d="0" class="closed"><span>Domingo</span><span>Sob consulta</span></li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Pagamento</h3>
+            <div class="pay"><span>PIX</span><span>Débito</span><span>Crédito</span><span>Dinheiro</span></div>
+          </div>
+        </div>
+        <div class="map reveal">
+          <iframe title="Mapa Leão Cortes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Barbearia%20Le%C3%A3o%20Cortes%2C%20R.%20Caminho%20Novo%2C%20229a%2C%20Barbacena%20-%20MG&ll=-21.2118789,-43.7604426&z=16&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <div class="wrap reveal">
+      <span class="eyebrow">Sua cadeira está esperando</span>
+      <h2>Bora dar um trato no visual?</h2>
+      <p>Escolha o serviço, veja os horários livres e confirme em menos de um minuto.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="https://sites.appbarber.com.br/leaocortes" target="_blank" rel="noopener">Agendar meu horário</a>
+        <a class="btn btn-ghost" href="tel:+5532991271265">Ligar (32) 99127-1265</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr"></span> Leão Cortes · Barbacena/MG</div>
+    <div>(32) 99127-1265 · Rua Caminho Novo, 229A</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5532991271265?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2 0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.9 1.9 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zM20.3 3.7C18.1 1.5 15.1.2 12 .2 5.5.2.2 5.5.2 12c0 2.1.5 4.1 1.6 5.9L.1 23.8l6-1.6c1.7.9 3.7 1.4 5.6 1.4 6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.4-8.3z"/></svg>
+</a>
+
+<script>
+// Nav com fundo ao rolar
+const nav=document.getElementById('nav');
+const onScroll=()=>nav.classList.toggle('scrolled',scrollY>20);
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+// Filtro de serviços
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  const f=t.dataset.f;
+  document.querySelectorAll('.svc').forEach(s=>s.classList.toggle('hide',f!=='all'&&s.dataset.c!==f));
+}));
+
+// Aberto agora / hoje (horário de Brasília)
+const H={0:null,1:[13,19],2:[9,19],3:[9,19],4:[9,19],5:[9,19],6:[9,16]};
+const nomes=['domingo','segunda','terça','quarta','quinta','sexta','sábado'];
+function nowBR(){
+  const p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Sao_Paulo',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+  const wd={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[p.find(x=>x.type==='weekday').value];
+  const h=+p.find(x=>x.type==='hour').value%24, m=+p.find(x=>x.type==='minute').value;
+  return {wd,t:h+m/60};
+}
+function updateOpen(){
+  const {wd,t}=nowBR(), b=document.getElementById('openBadge');
+  document.querySelectorAll('#hours li').forEach(li=>li.classList.toggle('today',+li.dataset.d===wd));
+  const today=H[wd];
+  let txt,sub;
+  if(today&&t>=today[0]&&t<today[1]){
+    b.classList.add('is-open');txt='Aberto agora';sub='Fecha às '+today[1]+':00';
+  }else{
+    b.classList.remove('is-open');txt='Fechado agora';
+    let d=wd,step=0;
+    if(today&&t<today[0]){sub='Abre hoje às '+String(today[0]).padStart(2,'0')+':00';}
+    else{do{d=(d+1)%7;step++}while(!H[d]&&step<7);sub='Abre '+(step===1?'amanhã':nomes[d])+' às '+String(H[d][0]).padStart(2,'0')+':00';}
+  }
+  document.getElementById('openTxt').textContent=txt;
+  document.getElementById('openSub').textContent=sub;
+}
+updateOpen();setInterval(updateOpen,60000);
+
+// Animação ao rolar
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
